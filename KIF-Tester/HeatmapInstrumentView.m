@@ -61,6 +61,7 @@
     _tickerLabel.textAlignment = NSTextAlignmentLeft;
     _tickerLabel.minimumScaleFactor = 0.7;
     _tickerLabel.adjustsFontSizeToFitWidth = YES;
+    
     [self addSubview:_tickerLabel];
     
     _percentChangeLabel = [[UILabel alloc] init];

@@ -6,20 +6,21 @@
 //  Copyright © 2016 Jon. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HeatmapViewController.h"
 #import "HeatmapViewModel.h"
 #import "HeatmapView.h"
 #import "EquityInstrument.h"
 #import "TradableInstrument.h"
 #import "HeatmapInstrumentView.h"
+#import "InstrumentViewController.h"
 
-@interface ViewController () <HeatmapViewDelegate>
+@interface HeatmapViewController () <HeatmapViewDelegate>
 @property (nonatomic, strong) NSArray<TradableInstrument> *instruments;
 @property (nonatomic, strong) HeatmapView *heatmapView;
 @property (nonatomic, strong) HeatmapViewModel *heatmapViewModel;
 @end
 
-@implementation ViewController
+@implementation HeatmapViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -46,7 +47,7 @@
     
     [self.view addSubview:self.heatmapView];
     [self.heatmapView.leftAnchor constraintEqualToAnchor:self.view.leftAnchor].active = YES;
-    [self.heatmapView.topAnchor constraintEqualToAnchor:self.view.topAnchor].active = YES;
+    [self.heatmapView.topAnchor constraintEqualToAnchor:self.topLayoutGuide.bottomAnchor].active = YES;
     [self.heatmapView.rightAnchor constraintEqualToAnchor:self.view.rightAnchor].active = YES;
     [self.heatmapView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor].active = YES;
 }
@@ -55,6 +56,8 @@
 
 - (void)heatmapView:(HeatmapView *)view didTapInstrumentView:(HeatmapInstrumentView *)instrumentView
 {
-    
+    InstrumentViewController *instrumentViewController = [InstrumentViewController instrumentViewControllerWithInstrument:instrumentView.instrument];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:instrumentViewController];
+    [self presentViewController:navigationController animated:YES completion:nil];
 }
 @end

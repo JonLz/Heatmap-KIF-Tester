@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		610738661D48430D008E3458 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 610738651D48430D008E3458 /* main.m */; };
 		610738691D48430D008E3458 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 610738681D48430D008E3458 /* AppDelegate.m */; };
-		6107386C1D48430D008E3458 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6107386B1D48430D008E3458 /* ViewController.m */; };
+		6107386C1D48430D008E3458 /* HeatmapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6107386B1D48430D008E3458 /* HeatmapViewController.m */; };
 		6107386F1D48430D008E3458 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6107386D1D48430D008E3458 /* Main.storyboard */; };
 		610738711D48430D008E3458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 610738701D48430D008E3458 /* Assets.xcassets */; };
 		610738741D48430D008E3458 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 610738721D48430D008E3458 /* LaunchScreen.storyboard */; };
@@ -20,6 +20,7 @@
 		610738981D485B3B008E3458 /* HeatmapInstrumentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 610738971D485B3B008E3458 /* HeatmapInstrumentView.m */; };
 		6107389C1D486260008E3458 /* HeatmapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6107389B1D486260008E3458 /* HeatmapView.m */; };
 		6107389F1D48D999008E3458 /* HeatmapViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6107389E1D48D999008E3458 /* HeatmapViewModel.m */; };
+		61CE2E181D49960200395650 /* InstrumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61CE2E171D49960200395650 /* InstrumentViewController.m */; };
 		7642880875C279851ECFDD6E /* libPods-KIF-TesterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E1D4CAF7A4588680B17A80 /* libPods-KIF-TesterTests.a */; };
 		C12083867FD0C7DE56EA69CA /* libPods-KIF-Tester.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0732198EF27350016C97B297 /* libPods-KIF-Tester.a */; };
 /* End PBXBuildFile section */
@@ -41,8 +42,8 @@
 		610738651D48430D008E3458 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		610738671D48430D008E3458 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		610738681D48430D008E3458 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6107386A1D48430D008E3458 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6107386B1D48430D008E3458 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6107386A1D48430D008E3458 /* HeatmapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeatmapViewController.h; sourceTree = "<group>"; };
+		6107386B1D48430D008E3458 /* HeatmapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeatmapViewController.m; sourceTree = "<group>"; };
 		6107386E1D48430D008E3458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		610738701D48430D008E3458 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		610738731D48430D008E3458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +64,8 @@
 		6107389B1D486260008E3458 /* HeatmapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeatmapView.m; sourceTree = "<group>"; };
 		6107389D1D48D999008E3458 /* HeatmapViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeatmapViewModel.h; sourceTree = "<group>"; };
 		6107389E1D48D999008E3458 /* HeatmapViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeatmapViewModel.m; sourceTree = "<group>"; };
+		61CE2E161D49960200395650 /* InstrumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstrumentViewController.h; sourceTree = "<group>"; };
+		61CE2E171D49960200395650 /* InstrumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstrumentViewController.m; sourceTree = "<group>"; };
 		688268189F4A3F33413E79EA /* Pods-KIF-Tester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIF-Tester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KIF-Tester/Pods-KIF-Tester.debug.xcconfig"; sourceTree = "<group>"; };
 		84484B1D71D70E0626DDC86B /* Pods-KIF-Tester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIF-Tester.release.xcconfig"; path = "Pods/Target Support Files/Pods-KIF-Tester/Pods-KIF-Tester.release.xcconfig"; sourceTree = "<group>"; };
 		8550411250402793B0676970 /* Pods-KIF-TesterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIF-TesterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KIF-TesterTests/Pods-KIF-TesterTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,19 +135,14 @@
 		610738631D48430D008E3458 /* KIF-Tester */ = {
 			isa = PBXGroup;
 			children = (
+				610738671D48430D008E3458 /* AppDelegate.h */,
+				610738681D48430D008E3458 /* AppDelegate.m */,
 				610738A01D48DA94008E3458 /* View Models */,
 				610738921D484DE2008E3458 /* Categories */,
 				610738911D4845A9008E3458 /* Protocols */,
 				610738891D4843E0008E3458 /* Models */,
-				610738671D48430D008E3458 /* AppDelegate.h */,
-				610738681D48430D008E3458 /* AppDelegate.m */,
-				6107386A1D48430D008E3458 /* ViewController.h */,
-				6107386B1D48430D008E3458 /* ViewController.m */,
+				61CE2E151D4995B100395650 /* Controllers */,
 				610738991D485B42008E3458 /* Views */,
-				6107386D1D48430D008E3458 /* Main.storyboard */,
-				610738701D48430D008E3458 /* Assets.xcassets */,
-				610738721D48430D008E3458 /* LaunchScreen.storyboard */,
-				610738751D48430D008E3458 /* Info.plist */,
 				610738641D48430D008E3458 /* Supporting Files */,
 			);
 			path = "KIF-Tester";
@@ -153,6 +151,10 @@
 		610738641D48430D008E3458 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6107386D1D48430D008E3458 /* Main.storyboard */,
+				610738701D48430D008E3458 /* Assets.xcassets */,
+				610738721D48430D008E3458 /* LaunchScreen.storyboard */,
+				610738751D48430D008E3458 /* Info.plist */,
 				610738651D48430D008E3458 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -213,6 +215,17 @@
 				6107389E1D48D999008E3458 /* HeatmapViewModel.m */,
 			);
 			name = "View Models";
+			sourceTree = "<group>";
+		};
+		61CE2E151D4995B100395650 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6107386A1D48430D008E3458 /* HeatmapViewController.h */,
+				6107386B1D48430D008E3458 /* HeatmapViewController.m */,
+				61CE2E161D49960200395650 /* InstrumentViewController.h */,
+				61CE2E171D49960200395650 /* InstrumentViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,8 +430,9 @@
 				6107388F1D484557008E3458 /* EquityInstrument.m in Sources */,
 				610738951D484DF9008E3458 /* NSString+RandomString.m in Sources */,
 				610738981D485B3B008E3458 /* HeatmapInstrumentView.m in Sources */,
+				61CE2E181D49960200395650 /* InstrumentViewController.m in Sources */,
 				6107389C1D486260008E3458 /* HeatmapView.m in Sources */,
-				6107386C1D48430D008E3458 /* ViewController.m in Sources */,
+				6107386C1D48430D008E3458 /* HeatmapViewController.m in Sources */,
 				610738691D48430D008E3458 /* AppDelegate.m in Sources */,
 				6107389F1D48D999008E3458 /* HeatmapViewModel.m in Sources */,
 				6107388C1D48440C008E3458 /* FinancialInstrument.m in Sources */,
