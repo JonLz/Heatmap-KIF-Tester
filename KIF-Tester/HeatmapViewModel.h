@@ -13,7 +13,6 @@
 
 @interface HeatmapViewModel : NSObject
 @property (nonatomic, assign, readonly) NSInteger tilesPerRow;
-@property (nonatomic, assign, readonly) CGSize tileSize;
 @property (nonatomic, strong, readonly) NSMutableArray<HeatmapInstrumentView *> *instrumentViews;
 - (instancetype)initWithInstruments:(NSArray<TradableInstrument> *)instruments;
 @end

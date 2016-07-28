@@ -59,12 +59,4 @@
     return 5;
 }
 
-- (CGSize)tileSize
-{
-    NSInteger tilesPerRow = [self tilesPerRow];
-    CGFloat screenWidth = [[UIScreen mainScreen] bounds].size.width;
-    CGFloat dim = (CGFloat)tilesPerRow / screenWidth;
-    return CGSizeMake(dim, dim);
-}
-
 @end

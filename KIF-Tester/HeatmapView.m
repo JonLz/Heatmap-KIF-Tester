@@ -78,7 +78,6 @@
     }
   
     NSInteger tilesPerRow = self.viewModel.tilesPerRow;
-    CGSize tileSize = self.viewModel.tileSize;
     NSInteger totalInstruments = [self.viewModel.instrumentViews count];
     NSInteger totalRows = MAX(1,totalInstruments / tilesPerRow);
     
@@ -94,9 +93,6 @@
         for (int j=0; j < tilesPerRow ; j++) {
             NSInteger index = i*tilesPerRow + j;
             HeatmapInstrumentView *viewAtIndex = [self.viewModel.instrumentViews objectAtIndex:index];
-            viewAtIndex.translatesAutoresizingMaskIntoConstraints = NO;
-            [viewAtIndex.heightAnchor constraintEqualToConstant:tileSize.height].active = YES;
-            [viewAtIndex.widthAnchor constraintEqualToConstant:tileSize.width].active = YES;
             [tileStackView addArrangedSubview:viewAtIndex];
         }
     }
