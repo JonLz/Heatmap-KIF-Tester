@@ -98,4 +98,16 @@
     }
 }
 
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch = [[event allTouches] anyObject];
+    
+    if ([[touch view] isKindOfClass:[HeatmapInstrumentView class]]) {
+        HeatmapInstrumentView *view = (HeatmapInstrumentView *)[touch view];
+        if ([self.delegate respondsToSelector:@selector(heatmapView:didTapInstrumentView:)]) {
+            [self.delegate heatmapView:self didTapInstrumentView:view];
+        }
+    }
+}
+
 @end

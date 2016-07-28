@@ -11,8 +11,9 @@
 #import "HeatmapView.h"
 #import "EquityInstrument.h"
 #import "TradableInstrument.h"
+#import "HeatmapInstrumentView.h"
 
-@interface ViewController ()
+@interface ViewController () <HeatmapViewDelegate>
 @property (nonatomic, strong) NSArray<TradableInstrument> *instruments;
 @property (nonatomic, strong) HeatmapView *heatmapView;
 @property (nonatomic, strong) HeatmapViewModel *heatmapViewModel;
@@ -41,13 +42,19 @@
     self.heatmapViewModel = [[HeatmapViewModel alloc] initWithInstruments:self.instruments];
     self.heatmapView = [[HeatmapView alloc] initWithViewModel:self.heatmapViewModel];
     self.heatmapView.translatesAutoresizingMaskIntoConstraints = NO;
+    self.heatmapView.delegate = self;
     
     [self.view addSubview:self.heatmapView];
     [self.heatmapView.leftAnchor constraintEqualToAnchor:self.view.leftAnchor].active = YES;
     [self.heatmapView.topAnchor constraintEqualToAnchor:self.view.topAnchor].active = YES;
     [self.heatmapView.rightAnchor constraintEqualToAnchor:self.view.rightAnchor].active = YES;
     [self.heatmapView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor].active = YES;
-    
 }
 
+#pragma mark - HeatmapViewDelegate
+
+- (void)heatmapView:(HeatmapView *)view didTapInstrumentView:(HeatmapInstrumentView *)instrumentView
+{
+    
+}
 @end

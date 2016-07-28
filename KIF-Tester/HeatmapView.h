@@ -7,8 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+
 @class HeatmapViewModel;
+@class HeatmapInstrumentView;
+@class HeatmapView;
+
+@protocol HeatmapViewDelegate <NSObject>
+@optional
+- (void)heatmapView:(HeatmapView *)view didTapInstrumentView:(HeatmapInstrumentView *)instrumentView;
+@end
 
 @interface HeatmapView : UIView
+@property (nonatomic, weak) id delegate;
 - (instancetype)initWithViewModel:(HeatmapViewModel *)viewModel;
 @end
