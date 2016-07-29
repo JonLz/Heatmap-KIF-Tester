@@ -13,7 +13,6 @@
 		6107386F1D48430D008E3458 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6107386D1D48430D008E3458 /* Main.storyboard */; };
 		610738711D48430D008E3458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 610738701D48430D008E3458 /* Assets.xcassets */; };
 		610738741D48430D008E3458 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 610738721D48430D008E3458 /* LaunchScreen.storyboard */; };
-		6107387F1D48430D008E3458 /* KIF_TesterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6107387E1D48430D008E3458 /* KIF_TesterTests.m */; };
 		6107388C1D48440C008E3458 /* FinancialInstrument.m in Sources */ = {isa = PBXBuildFile; fileRef = 6107388B1D48440C008E3458 /* FinancialInstrument.m */; };
 		6107388F1D484557008E3458 /* EquityInstrument.m in Sources */ = {isa = PBXBuildFile; fileRef = 6107388E1D484557008E3458 /* EquityInstrument.m */; };
 		610738951D484DF9008E3458 /* NSString+RandomString.m in Sources */ = {isa = PBXBuildFile; fileRef = 610738941D484DF9008E3458 /* NSString+RandomString.m */; };
@@ -21,6 +20,7 @@
 		6107389C1D486260008E3458 /* HeatmapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6107389B1D486260008E3458 /* HeatmapView.m */; };
 		6107389F1D48D999008E3458 /* HeatmapViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6107389E1D48D999008E3458 /* HeatmapViewModel.m */; };
 		614C73801D4AB7040003DA83 /* UIView+TraverseSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 614C737F1D4AB7040003DA83 /* UIView+TraverseSubviews.m */; };
+		614C73831D4AD8860003DA83 /* InstrumentViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 614C73821D4AD8860003DA83 /* InstrumentViewControllerTest.m */; };
 		61CE2E181D49960200395650 /* InstrumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61CE2E171D49960200395650 /* InstrumentViewController.m */; };
 		61CE2E1A1D4A304600395650 /* HeatmapViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 61CE2E191D4A304600395650 /* HeatmapViewControllerTest.m */; };
 		7642880875C279851ECFDD6E /* libPods-KIF-TesterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E1D4CAF7A4588680B17A80 /* libPods-KIF-TesterTests.a */; };
@@ -51,7 +51,6 @@
 		610738731D48430D008E3458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		610738751D48430D008E3458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6107387A1D48430D008E3458 /* KIF-TesterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KIF-TesterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6107387E1D48430D008E3458 /* KIF_TesterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIF_TesterTests.m; sourceTree = "<group>"; };
 		610738801D48430D008E3458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6107388A1D48440C008E3458 /* FinancialInstrument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinancialInstrument.h; sourceTree = "<group>"; };
 		6107388B1D48440C008E3458 /* FinancialInstrument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinancialInstrument.m; sourceTree = "<group>"; };
@@ -68,6 +67,7 @@
 		6107389E1D48D999008E3458 /* HeatmapViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeatmapViewModel.m; sourceTree = "<group>"; };
 		614C737E1D4AB7040003DA83 /* UIView+TraverseSubviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TraverseSubviews.h"; sourceTree = "<group>"; };
 		614C737F1D4AB7040003DA83 /* UIView+TraverseSubviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TraverseSubviews.m"; sourceTree = "<group>"; };
+		614C73821D4AD8860003DA83 /* InstrumentViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstrumentViewControllerTest.m; sourceTree = "<group>"; };
 		61CE2E161D49960200395650 /* InstrumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstrumentViewController.h; sourceTree = "<group>"; };
 		61CE2E171D49960200395650 /* InstrumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstrumentViewController.m; sourceTree = "<group>"; };
 		61CE2E191D4A304600395650 /* HeatmapViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeatmapViewControllerTest.m; sourceTree = "<group>"; };
@@ -169,8 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				614C737D1D4AB6DA0003DA83 /* Utilities */,
-				6107387E1D48430D008E3458 /* KIF_TesterTests.m */,
-				61CE2E191D4A304600395650 /* HeatmapViewControllerTest.m */,
+				614C73811D4AD7F10003DA83 /* Controllers */,
 				610738801D48430D008E3458 /* Info.plist */,
 			);
 			path = "KIF-TesterTests";
@@ -231,6 +230,15 @@
 				614C737F1D4AB7040003DA83 /* UIView+TraverseSubviews.m */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		614C73811D4AD7F10003DA83 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				61CE2E191D4A304600395650 /* HeatmapViewControllerTest.m */,
+				614C73821D4AD8860003DA83 /* InstrumentViewControllerTest.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		61CE2E151D4995B100395650 /* Controllers */ = {
@@ -460,7 +468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6107387F1D48430D008E3458 /* KIF_TesterTests.m in Sources */,
+				614C73831D4AD8860003DA83 /* InstrumentViewControllerTest.m in Sources */,
 				61CE2E1A1D4A304600395650 /* HeatmapViewControllerTest.m in Sources */,
 				614C73801D4AB7040003DA83 /* UIView+TraverseSubviews.m in Sources */,
 			);

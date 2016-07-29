@@ -17,6 +17,8 @@
 
 @implementation InstrumentViewController
 
+NSString *const InstrumentViewControllerAccessibilityLabel = @"Instrument View";
+
 + (instancetype)instrumentViewControllerWithInstrument:(NSObject <TradableInstrument> *)instrument
 {
     return [[self alloc] initWithInstrument:instrument];
@@ -38,6 +40,7 @@
     
     NSAssert(self.instrument != nil, @"No instrument provided. Use designated initializer with an instrument.");
     
+    self.view.accessibilityLabel = InstrumentViewControllerAccessibilityLabel;
     self.view.backgroundColor = [UIColor whiteColor];
     self.edgesForExtendedLayout = UIRectEdgeNone;
     

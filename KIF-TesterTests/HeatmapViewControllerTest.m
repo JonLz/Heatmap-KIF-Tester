@@ -8,11 +8,13 @@
 
 #import <XCTest/XCTest.h>
 #import <KIF/KIF.h>
+
 #import "HeatmapViewController.h"
 #import "HeatmapInstrumentView.h"
 #import "UIView+TraverseSubviews.h"
 
 extern NSString *const HeatmapViewAccessibilityLabel;
+extern NSString *const InstrumentViewControllerAccessibilityLabel;
 
 @interface HeatmapViewControllerTest : KIFTestCase
 @property (nonatomic) HeatmapViewController *viewController;
@@ -29,8 +31,10 @@ extern NSString *const HeatmapViewAccessibilityLabel;
     [super tearDown];
 }
 
-- (void)testToVerifyExistenceOfHeatmapView {
+- (void)testToVerifyHeatmapViewControllerUI {
     [tester waitForViewWithAccessibilityLabel:HeatmapViewAccessibilityLabel];
+    [tester tapScreenAtPoint:self.viewController.view.center];
+    [tester waitForViewWithAccessibilityLabel:InstrumentViewControllerAccessibilityLabel];
 }
 
 - (void)testToVerifyDisplayOfHeatmapView {
