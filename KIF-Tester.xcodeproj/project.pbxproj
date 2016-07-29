@@ -21,6 +21,7 @@
 		6107389F1D48D999008E3458 /* HeatmapViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6107389E1D48D999008E3458 /* HeatmapViewModel.m */; };
 		614C73801D4AB7040003DA83 /* UIView+TraverseSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 614C737F1D4AB7040003DA83 /* UIView+TraverseSubviews.m */; };
 		614C73831D4AD8860003DA83 /* InstrumentViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 614C73821D4AD8860003DA83 /* InstrumentViewControllerTest.m */; };
+		614C73861D4AF9460003DA83 /* NSString+CurrencySubstrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 614C73851D4AF9460003DA83 /* NSString+CurrencySubstrings.m */; };
 		61CE2E181D49960200395650 /* InstrumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61CE2E171D49960200395650 /* InstrumentViewController.m */; };
 		61CE2E1A1D4A304600395650 /* HeatmapViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 61CE2E191D4A304600395650 /* HeatmapViewControllerTest.m */; };
 		7642880875C279851ECFDD6E /* libPods-KIF-TesterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E1D4CAF7A4588680B17A80 /* libPods-KIF-TesterTests.a */; };
@@ -68,6 +69,8 @@
 		614C737E1D4AB7040003DA83 /* UIView+TraverseSubviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TraverseSubviews.h"; sourceTree = "<group>"; };
 		614C737F1D4AB7040003DA83 /* UIView+TraverseSubviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TraverseSubviews.m"; sourceTree = "<group>"; };
 		614C73821D4AD8860003DA83 /* InstrumentViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstrumentViewControllerTest.m; sourceTree = "<group>"; };
+		614C73841D4AF9460003DA83 /* NSString+CurrencySubstrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CurrencySubstrings.h"; sourceTree = "<group>"; };
+		614C73851D4AF9460003DA83 /* NSString+CurrencySubstrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CurrencySubstrings.m"; sourceTree = "<group>"; };
 		61CE2E161D49960200395650 /* InstrumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstrumentViewController.h; sourceTree = "<group>"; };
 		61CE2E171D49960200395650 /* InstrumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstrumentViewController.m; sourceTree = "<group>"; };
 		61CE2E191D4A304600395650 /* HeatmapViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeatmapViewControllerTest.m; sourceTree = "<group>"; };
@@ -228,6 +231,8 @@
 			children = (
 				614C737E1D4AB7040003DA83 /* UIView+TraverseSubviews.h */,
 				614C737F1D4AB7040003DA83 /* UIView+TraverseSubviews.m */,
+				614C73841D4AF9460003DA83 /* NSString+CurrencySubstrings.h */,
+				614C73851D4AF9460003DA83 /* NSString+CurrencySubstrings.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -470,6 +475,7 @@
 			files = (
 				614C73831D4AD8860003DA83 /* InstrumentViewControllerTest.m in Sources */,
 				61CE2E1A1D4A304600395650 /* HeatmapViewControllerTest.m in Sources */,
+				614C73861D4AF9460003DA83 /* NSString+CurrencySubstrings.m in Sources */,
 				614C73801D4AB7040003DA83 /* UIView+TraverseSubviews.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
