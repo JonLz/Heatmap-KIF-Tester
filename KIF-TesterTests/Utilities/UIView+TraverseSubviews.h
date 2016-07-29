@@ -10,4 +10,5 @@
 
 @interface UIView (TraverseSubviews)
 - (void)traverseSubviewsUsingBlock:(void (^)(UIView *view))block;
+- (void)traverseSubviewLabelsUsingBlock:(void (^)(UILabel *label))block;
 @end

@@ -20,6 +20,8 @@
 @property (nonatomic) InstrumentViewController *viewController;
 @end
 
+NSString *const ValidCurrencyRegexPattern = @"[$][\\d|\\.|,]+\\.[\\d]{2}$";
+
 @implementation InstrumentViewControllerTest
 
 - (void)setUp {
@@ -35,12 +37,9 @@
 - (void)testToVerifyDisplayAndContentLengthOfLabels {
     
     __block NSInteger labelsFound = 0;
-    [self.viewController.view traverseSubviewsUsingBlock:^(UIView *view) {
-        if ([view isKindOfClass:[UILabel class]]) {
-            UILabel *label = (UILabel *)view;
-            XCTAssert(label.text.length > 0);
-            labelsFound += 1;
-        }
+    [self.viewController.view traverseSubviewLabelsUsingBlock:^(UILabel *label) {
+        XCTAssert(label.text.length > 0);
+        labelsFound += 1;
     }];
     XCTAssert(labelsFound == 3);
 }
@@ -52,12 +51,9 @@
 
 - (void)testToVerifyProperRepresentationOfCurrencyInCentsForLabels {
     
-    [self.viewController.view traverseSubviewsUsingBlock:^(UIView *view) {
-        if ([view isKindOfClass:[UILabel class]]) {
-            UILabel *label = (UILabel *)view;
-            if ([label.text containsString:@"$"]) {
-                [self verifyProperRepresentationOfCurrencyInCents:label.text];
-            }
+    [self.viewController.view traverseSubviewLabelsUsingBlock:^(UILabel *label) {
+        if ([label.text containsString:@"$"]) {
+            [self verifyProperRepresentationOfCurrencyInCents:label.text];
         }
     }];
 }
@@ -83,20 +79,16 @@
 }
 - (void)testToVerifyProperDisplayOfCurrencyForLabels {
 
-    [self.viewController.view traverseSubviewsUsingBlock:^(UIView *view) {
-        if ([view isKindOfClass:[UILabel class]]) {
-            UILabel *label = (UILabel *)view;
-            if ([label.text containsString:@"$"]) {
-                [self verifyCurrencyLabelContainsProperDecimalAndSigFigs:label.text];
-            }
+    [self.viewController.view traverseSubviewLabelsUsingBlock:^(UILabel *label) {
+        if ([label.text containsString:@"$"]) {
+            [self verifyCurrencyLabelContainsProperDecimalAndSigFigs:label.text];
         }
     }];
 }
 
 - (void)verifyCurrencyLabelContainsProperDecimalAndSigFigs:(NSString *)text
 {
-    NSString *validCurrencyRegexPattern = @"[$][\\d|\\.|,]+\\.[\\d]{2}$";
-    NSPredicate *validCurrencyPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", validCurrencyRegexPattern];
+    NSPredicate *validCurrencyPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", ValidCurrencyRegexPattern];
     
     for (NSString *currencyFigure in [text currencySubstrings]) {
         BOOL validCurrency = [validCurrencyPredicate evaluateWithObject:currencyFigure];

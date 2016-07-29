@@ -20,4 +20,13 @@
     }
 }
 
+- (void)traverseSubviewLabelsUsingBlock:(void (^)(UILabel *label))block
+{
+    [self traverseSubviewsUsingBlock:^(UIView *view) {
+        if ([view isKindOfClass:[UILabel class]]) {
+            UILabel *label = (UILabel *)view;
+            block(label);
+        }
+    }];
+}
 @end
