@@ -120,11 +120,11 @@
 		610738581D48430D008E3458 = {
 			isa = PBXGroup;
 			children = (
+				279DC51449B6F87390A4CB2E /* Frameworks */,
 				610738631D48430D008E3458 /* KIF-Tester */,
 				6107387D1D48430D008E3458 /* KIF-TesterTests */,
-				610738621D48430D008E3458 /* Products */,
 				5C21DCEE5E048EEF905C0443 /* Pods */,
-				279DC51449B6F87390A4CB2E /* Frameworks */,
+				610738621D48430D008E3458 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,15 +140,15 @@
 		610738631D48430D008E3458 /* KIF-Tester */ = {
 			isa = PBXGroup;
 			children = (
+				610738921D484DE2008E3458 /* Categories */,
+				61CE2E151D4995B100395650 /* Controllers */,
+				610738891D4843E0008E3458 /* Models */,
+				610738911D4845A9008E3458 /* Protocols */,
+				610738641D48430D008E3458 /* Supporting Files */,
+				610738A01D48DA94008E3458 /* View Models */,
+				610738991D485B42008E3458 /* Views */,
 				610738671D48430D008E3458 /* AppDelegate.h */,
 				610738681D48430D008E3458 /* AppDelegate.m */,
-				610738A01D48DA94008E3458 /* View Models */,
-				610738921D484DE2008E3458 /* Categories */,
-				610738911D4845A9008E3458 /* Protocols */,
-				610738891D4843E0008E3458 /* Models */,
-				61CE2E151D4995B100395650 /* Controllers */,
-				610738991D485B42008E3458 /* Views */,
-				610738641D48430D008E3458 /* Supporting Files */,
 			);
 			path = "KIF-Tester";
 			sourceTree = "<group>";
@@ -156,20 +156,20 @@
 		610738641D48430D008E3458 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6107386D1D48430D008E3458 /* Main.storyboard */,
 				610738701D48430D008E3458 /* Assets.xcassets */,
-				610738721D48430D008E3458 /* LaunchScreen.storyboard */,
 				610738751D48430D008E3458 /* Info.plist */,
+				610738721D48430D008E3458 /* LaunchScreen.storyboard */,
+				6107386D1D48430D008E3458 /* Main.storyboard */,
 				610738651D48430D008E3458 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		6107387D1D48430D008E3458 /* KIF-TesterTests */ = {
 			isa = PBXGroup;
 			children = (
-				614C737D1D4AB6DA0003DA83 /* Utilities */,
 				614C73811D4AD7F10003DA83 /* Controllers */,
+				614C737D1D4AB6DA0003DA83 /* Utilities */,
 				610738801D48430D008E3458 /* Info.plist */,
 			);
 			path = "KIF-TesterTests";
@@ -178,12 +178,12 @@
 		610738891D4843E0008E3458 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				6107388A1D48440C008E3458 /* FinancialInstrument.h */,
-				6107388B1D48440C008E3458 /* FinancialInstrument.m */,
 				6107388D1D484557008E3458 /* EquityInstrument.h */,
 				6107388E1D484557008E3458 /* EquityInstrument.m */,
+				6107388A1D48440C008E3458 /* FinancialInstrument.h */,
+				6107388B1D48440C008E3458 /* FinancialInstrument.m */,
 			);
-			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		610738911D4845A9008E3458 /* Protocols */ = {
@@ -191,7 +191,7 @@
 			children = (
 				610738901D48459D008E3458 /* TradableInstrument.h */,
 			);
-			name = Protocols;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		610738921D484DE2008E3458 /* Categories */ = {
@@ -200,18 +200,18 @@
 				610738931D484DF9008E3458 /* NSString+RandomString.h */,
 				610738941D484DF9008E3458 /* NSString+RandomString.m */,
 			);
-			name = Categories;
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		610738991D485B42008E3458 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6107389A1D486260008E3458 /* HeatmapView.h */,
-				6107389B1D486260008E3458 /* HeatmapView.m */,
 				610738961D485B3B008E3458 /* HeatmapInstrumentView.h */,
 				610738971D485B3B008E3458 /* HeatmapInstrumentView.m */,
+				6107389A1D486260008E3458 /* HeatmapView.h */,
+				6107389B1D486260008E3458 /* HeatmapView.m */,
 			);
-			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		610738A01D48DA94008E3458 /* View Models */ = {
@@ -220,7 +220,7 @@
 				6107389D1D48D999008E3458 /* HeatmapViewModel.h */,
 				6107389E1D48D999008E3458 /* HeatmapViewModel.m */,
 			);
-			name = "View Models";
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 		614C737D1D4AB6DA0003DA83 /* Utilities */ = {
@@ -229,7 +229,7 @@
 				614C737E1D4AB7040003DA83 /* UIView+TraverseSubviews.h */,
 				614C737F1D4AB7040003DA83 /* UIView+TraverseSubviews.m */,
 			);
-			name = Utilities;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		614C73811D4AD7F10003DA83 /* Controllers */ = {
@@ -238,7 +238,7 @@
 				61CE2E191D4A304600395650 /* HeatmapViewControllerTest.m */,
 				614C73821D4AD8860003DA83 /* InstrumentViewControllerTest.m */,
 			);
-			name = Controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		61CE2E151D4995B100395650 /* Controllers */ = {
@@ -249,7 +249,7 @@
 				61CE2E161D49960200395650 /* InstrumentViewController.h */,
 				61CE2E171D49960200395650 /* InstrumentViewController.m */,
 			);
-			name = Controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -491,6 +491,7 @@
 				6107386E1D48430D008E3458 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		610738721D48430D008E3458 /* LaunchScreen.storyboard */ = {
@@ -499,6 +500,7 @@
 				610738731D48430D008E3458 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -591,7 +593,7 @@
 			baseConfigurationReference = 688268189F4A3F33413E79EA /* Pods-KIF-Tester.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "KIF-Tester/Info.plist";
+				INFOPLIST_FILE = "KIF-Tester/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jon.KIF-Tester";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -603,7 +605,7 @@
 			baseConfigurationReference = 84484B1D71D70E0626DDC86B /* Pods-KIF-Tester.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "KIF-Tester/Info.plist";
+				INFOPLIST_FILE = "KIF-Tester/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jon.KIF-Tester";
 				PRODUCT_NAME = "$(TARGET_NAME)";
