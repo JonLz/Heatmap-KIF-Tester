@@ -21,18 +21,8 @@
 {
     self = [super init];
     if (self) {
-        [self commonInit];
         _viewModel = viewModel;
         [self updateWithViewModel:viewModel];
-    }
-    return self;
-}
-
-- (instancetype)init
-{
-    self = [self init];
-    if (self) {
-        [self commonInit];
     }
     return self;
 }
@@ -69,6 +59,12 @@
     [self.heatmapStackView.rightAnchor constraintEqualToAnchor:self.rightAnchor].active = YES;
     [self.heatmapStackView.topAnchor constraintEqualToAnchor:self.topAnchor].active = YES;
     [self.heatmapStackView.bottomAnchor constraintEqualToAnchor:self.bottomAnchor].active = YES;
+}
+
+- (void)setViewModel:(HeatmapViewModel *)viewModel
+{
+    _viewModel = viewModel;
+    [self updateWithViewModel:viewModel];
 }
 
 - (void)updateWithViewModel:(HeatmapViewModel *)viewModel

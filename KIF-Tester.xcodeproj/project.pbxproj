@@ -20,7 +20,9 @@
 		610738981D485B3B008E3458 /* HeatmapInstrumentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 610738971D485B3B008E3458 /* HeatmapInstrumentView.m */; };
 		6107389C1D486260008E3458 /* HeatmapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6107389B1D486260008E3458 /* HeatmapView.m */; };
 		6107389F1D48D999008E3458 /* HeatmapViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6107389E1D48D999008E3458 /* HeatmapViewModel.m */; };
+		614C73801D4AB7040003DA83 /* UIView+TraverseSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 614C737F1D4AB7040003DA83 /* UIView+TraverseSubviews.m */; };
 		61CE2E181D49960200395650 /* InstrumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61CE2E171D49960200395650 /* InstrumentViewController.m */; };
+		61CE2E1A1D4A304600395650 /* HeatmapViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 61CE2E191D4A304600395650 /* HeatmapViewControllerTest.m */; };
 		7642880875C279851ECFDD6E /* libPods-KIF-TesterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E1D4CAF7A4588680B17A80 /* libPods-KIF-TesterTests.a */; };
 		C12083867FD0C7DE56EA69CA /* libPods-KIF-Tester.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0732198EF27350016C97B297 /* libPods-KIF-Tester.a */; };
 /* End PBXBuildFile section */
@@ -64,8 +66,11 @@
 		6107389B1D486260008E3458 /* HeatmapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeatmapView.m; sourceTree = "<group>"; };
 		6107389D1D48D999008E3458 /* HeatmapViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeatmapViewModel.h; sourceTree = "<group>"; };
 		6107389E1D48D999008E3458 /* HeatmapViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeatmapViewModel.m; sourceTree = "<group>"; };
+		614C737E1D4AB7040003DA83 /* UIView+TraverseSubviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TraverseSubviews.h"; sourceTree = "<group>"; };
+		614C737F1D4AB7040003DA83 /* UIView+TraverseSubviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TraverseSubviews.m"; sourceTree = "<group>"; };
 		61CE2E161D49960200395650 /* InstrumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstrumentViewController.h; sourceTree = "<group>"; };
 		61CE2E171D49960200395650 /* InstrumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstrumentViewController.m; sourceTree = "<group>"; };
+		61CE2E191D4A304600395650 /* HeatmapViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeatmapViewControllerTest.m; sourceTree = "<group>"; };
 		688268189F4A3F33413E79EA /* Pods-KIF-Tester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIF-Tester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KIF-Tester/Pods-KIF-Tester.debug.xcconfig"; sourceTree = "<group>"; };
 		84484B1D71D70E0626DDC86B /* Pods-KIF-Tester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIF-Tester.release.xcconfig"; path = "Pods/Target Support Files/Pods-KIF-Tester/Pods-KIF-Tester.release.xcconfig"; sourceTree = "<group>"; };
 		8550411250402793B0676970 /* Pods-KIF-TesterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIF-TesterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KIF-TesterTests/Pods-KIF-TesterTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -163,7 +168,9 @@
 		6107387D1D48430D008E3458 /* KIF-TesterTests */ = {
 			isa = PBXGroup;
 			children = (
+				614C737D1D4AB6DA0003DA83 /* Utilities */,
 				6107387E1D48430D008E3458 /* KIF_TesterTests.m */,
+				61CE2E191D4A304600395650 /* HeatmapViewControllerTest.m */,
 				610738801D48430D008E3458 /* Info.plist */,
 			);
 			path = "KIF-TesterTests";
@@ -215,6 +222,15 @@
 				6107389E1D48D999008E3458 /* HeatmapViewModel.m */,
 			);
 			name = "View Models";
+			sourceTree = "<group>";
+		};
+		614C737D1D4AB6DA0003DA83 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				614C737E1D4AB7040003DA83 /* UIView+TraverseSubviews.h */,
+				614C737F1D4AB7040003DA83 /* UIView+TraverseSubviews.m */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		61CE2E151D4995B100395650 /* Controllers */ = {
@@ -445,6 +461,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6107387F1D48430D008E3458 /* KIF_TesterTests.m in Sources */,
+				61CE2E1A1D4A304600395650 /* HeatmapViewControllerTest.m in Sources */,
+				614C73801D4AB7040003DA83 /* UIView+TraverseSubviews.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

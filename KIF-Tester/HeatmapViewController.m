@@ -22,6 +22,8 @@
 
 @implementation HeatmapViewController
 
+NSString *const HeatmapViewAccessibilityLabel = @"Heatmap View";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadInstruments];
@@ -44,6 +46,7 @@
     self.heatmapView = [[HeatmapView alloc] initWithViewModel:self.heatmapViewModel];
     self.heatmapView.translatesAutoresizingMaskIntoConstraints = NO;
     self.heatmapView.delegate = self;
+    self.heatmapView.accessibilityLabel = HeatmapViewAccessibilityLabel;
     
     [self.view addSubview:self.heatmapView];
     [self.heatmapView.leftAnchor constraintEqualToAnchor:self.view.leftAnchor].active = YES;

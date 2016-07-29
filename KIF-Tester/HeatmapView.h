@@ -18,6 +18,8 @@
 @end
 
 @interface HeatmapView : UIView
+@property (nonatomic, strong, readonly) HeatmapViewModel *viewModel;
 @property (nonatomic, weak) id delegate;
 - (instancetype)initWithViewModel:(HeatmapViewModel *)viewModel;
+- (void)setViewModel:(HeatmapViewModel *)viewModel;
 @end

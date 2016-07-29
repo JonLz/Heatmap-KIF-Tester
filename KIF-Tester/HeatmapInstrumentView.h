@@ -13,4 +13,5 @@
 @interface HeatmapInstrumentView : UIView
 @property (nonatomic, strong, readonly) id <TradableInstrument> instrument;
 - (instancetype)initWithInstrument:(id <TradableInstrument>)instrument;
+- (void)setInstrument:(id<TradableInstrument>)instrument;
 @end

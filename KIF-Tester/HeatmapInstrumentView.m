@@ -22,17 +22,7 @@
     self = [super init];
     if (self) {
         _instrument = instrument;
-        [self commonInit];
         [self updateWithInstrument:instrument];
-    }
-    return self;
-}
-
-- (instancetype)init
-{
-    self = [self init];
-    if (self) {
-        [self commonInit];
     }
     return self;
 }
@@ -61,7 +51,6 @@
     _tickerLabel.textAlignment = NSTextAlignmentLeft;
     _tickerLabel.minimumScaleFactor = 0.7;
     _tickerLabel.adjustsFontSizeToFitWidth = YES;
-    
     [self addSubview:_tickerLabel];
     
     _percentChangeLabel = [[UILabel alloc] init];
@@ -95,7 +84,7 @@
 - (void)setInstrument:(id<TradableInstrument>)instrument
 {
     _instrument = instrument;
-    [self updateWithInstrument:instrument];
+    if (instrument) [self updateWithInstrument:instrument];
 }
 
 - (void)updateWithInstrument:(id<TradableInstrument>)instrument
