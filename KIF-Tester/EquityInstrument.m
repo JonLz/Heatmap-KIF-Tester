@@ -30,9 +30,9 @@
 
 - (instancetype)init
 {
-    NSInteger bid = arc4random_uniform(100);
-    NSInteger ask = bid + arc4random_uniform(10);
-    NSInteger openingPrice = arc4random_uniform(100);
+    NSInteger bid = arc4random_uniform(10000);
+    NSInteger ask = bid + arc4random_uniform(1000);
+    NSInteger openingPrice = arc4random_uniform(10000);
     CGFloat percentChange = ((CGFloat)arc4random_uniform(100) + 50)/ 100.0;
     NSInteger ltp = (CGFloat)openingPrice * percentChange;
     NSString *symbol = [[NSString randomStringWithLength:3] uppercaseString];

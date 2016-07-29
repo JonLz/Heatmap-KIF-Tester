@@ -38,7 +38,7 @@ NSString *const InstrumentViewControllerAccessibilityLabel = @"Instrument View";
 {
     [super viewDidLoad];
     
-    NSAssert(self.instrument != nil, @"No instrument provided. Use designated initializer with an instrument.");
+    NSParameterAssert(self.instrument);
     
     self.view.accessibilityLabel = InstrumentViewControllerAccessibilityLabel;
     self.view.backgroundColor = [UIColor whiteColor];
@@ -90,7 +90,7 @@ NSString *const InstrumentViewControllerAccessibilityLabel = @"Instrument View";
 - (void)updateWithInstrument
 {
     self.symbolLabel.text = self.instrument.symbol;
-    self.priceLabel.text = [NSString stringWithFormat:@"$%ld", self.instrument.lastTradedPrice];
+    self.priceLabel.text = [NSString stringWithFormat:@"$%0.2f", (CGFloat)self.instrument.lastTradedPrice / 100.0];
     self.bidAskLabel.text = [NSString stringWithFormat:@"%ld x %ld", self.instrument.bid, self.instrument.ask];
 }
 
