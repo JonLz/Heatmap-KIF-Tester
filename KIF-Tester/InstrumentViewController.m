@@ -91,7 +91,13 @@ NSString *const InstrumentViewControllerAccessibilityLabel = @"Instrument View";
 {
     self.symbolLabel.text = self.instrument.symbol;
     self.priceLabel.text = [NSString stringWithFormat:@"$%0.2f", (CGFloat)self.instrument.lastTradedPrice / 100.0];
-    self.bidAskLabel.text = [NSString stringWithFormat:@"%ld x %ld", self.instrument.bid, self.instrument.ask];
+
+    // Toggle to trigger integration test passing
+    BOOL testWillPass = YES;
+    
+    self.bidAskLabel.text = testWillPass ?
+        [NSString stringWithFormat:@"$%0.2f x $%0.2f", (CGFloat)self.instrument.bid / 100.0, (CGFloat)self.instrument.ask / 100.0] :
+        [NSString stringWithFormat:@"$%0.2f x $%ld", (CGFloat)self.instrument.bid / 100.0, self.instrument.ask];
 }
 
 #pragma mark - Navigation
